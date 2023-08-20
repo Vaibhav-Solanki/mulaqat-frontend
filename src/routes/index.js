@@ -7,6 +7,7 @@ import { app } from '../firebase/index'
 
 import Home from './Home';
 import Dashboard from './Dashboard'
+import SidebarWithHeader from './NavBar';
 
 export default function Routes () {
   const auth = getAuth(app);
@@ -16,12 +17,14 @@ export default function Routes () {
   const router = createBrowserRouter(authProvider([
     {
       path: "/",
-      element: <Home />,
-      isProtected: true
+      element: <Home/>,
+      isProtected: true,
+      navbar:true
     }, {
       path: "/dashboard",
       element: <Dashboard />,
-      isProtected: true
+      isProtected: true,
+      navbar:true
     }
   ], user));
 
