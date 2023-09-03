@@ -93,7 +93,7 @@ const Home = () => {
                 rel="noreferrer"
               >
                 {" "}
-                Sahil Verma
+                Team text 😁
               </a>
             </div>
           </div>
